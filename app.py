@@ -46,5 +46,5 @@ def report():
         return jsonify({'message': 'Invalid data'}), 400
 
 if __name__ == '__main__':
-    init_db()
+    init_db()  # Ensure the database is initialized before starting the app
     app.run(debug=True)
