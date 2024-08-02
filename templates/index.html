@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Links</title>
+</head>
+<body>
+    <h1>Reported Phishing Links</h1>
+    <table border="1">
+        <tr>
+            <th>Link</th>
+            <th>Username</th>
+        </tr>
+        {% for link, username in links %}
+        <tr>
+            <td><a href="{{ link }}" target="_blank">{{ link }}</a></td>
+            <td>{{ username }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
